@@ -1,0 +1,8 @@
+public static void rightgripfly2() 
+      {
+          if (controllerinputpoller.instance.rightgrab)
+          {
+              gorillalocomotion.player.instance.transform.position += (gorillalocomotion.player.instance.headcollider.transform.forward * time.deltatime) * 15;
+              gorillalocomotion.player.instance.transform.getcomponent<rigidbody>().velocity = vector3.zero;
+          }
+      } 
